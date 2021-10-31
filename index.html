@@ -112,82 +112,45 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-           <tr onmouseout="A_stop()" onmouseover="A_start()">
+
+           <heading> Publications </heading>
+
+           <tr onmouseout="D_stop()" onmouseover="D_start()">
              <td style="padding:20px;width:25%;vertical-align:middle">
-               <div id='A_blurry' class='hidden'><img src="images/www/RSS20.webp"  width="160"></div>
-               <div id='A_sharp'>
-                 <a href="images/www/RSS20.webp"><img src="images/www/RSS20.png"  width="160"></a>
+               <div id='D_blurry' class='hidden'><img src="images/www/tailoring.png"  width="160"></div>
+               <div id='D_sharp'>
+                 <a href="images/www/tailoring.png"><img src="images/www/tailoring.png"  width="160"></a>
                </div>
                <script type="text/javascript">
-                 function A_start() {
-                   document.getElementById('A_blurry').style.display = 'inline';
-                   document.getElementById('A_sharp').style.display = 'none';
+                 function D_start() {
+                   document.getElementById('D_blurry').style.display = 'inline';
+                   document.getElementById('D_sharp').style.display = 'none';
                  }
 
-                 function A_stop() {
-                   document.getElementById('A_blurry').style.display = 'none';
-                   document.getElementById('A_sharp').style.display = 'inline';
+                 function D_stop() {
+                   document.getElementById('D_blurry').style.display = 'none';
+                   document.getElementById('D_sharp').style.display = 'inline';
                  }
-                 A_stop()
+                 D_stop()
                </script>
              </td>
              <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/pdf/2012.05205.pdf" target="_blank" target="_blank">
-                <papertitle> Tactile Object Pose Estimation from the First Touch with Geometric Contact Rendering </papertitle>
+              <a href="https://arxiv.org/pdf/2009.10623.pdf" target="_blank">
+                <papertitle> Tailoring: Encoding Inductive Biases by Optimizing Unsupervised Objectives at Prediction Time </papertitle>
               </a>
               <br>
-              <strong>M. Bauza</strong>, E. Valls, B. Lim, T. Sechopoulos
+              F. Alet, K. Kawaguchi, <strong> M. Bauza</strong>, N. Kuru, T. Lozano-Perez, L. Kaelbling
               <br>
-              <em>CORL</em>, 2020
+              <em>NeurIPS</em>, 2021 
               <br>
-              <a href="https://arxiv.org/pdf/2012.05205.pdf" target="_blank">PDF</a> /
-              <a href="https://youtu.be/OF8HbbGHnsM" target="_blank">video</a> /
-              <!-- <a href="data/Anderson2016.bib" target="_blank">bibtex</a> / -->
-              <a href="https://mcube.mit.edu/research/tactile_loc_first_touch.html" target="_blank"> website </a>
+              <a href="https://arxiv.org/pdf/2009.10623.pdf" target="_blank">PDF</a> 
+              <!-- <a href="data/Anderson2016.bib" target="_blank">bibtex</a> -->
               <p></p>
-              <p>We learn in simulation how to accurate localize objects. Our solution transfers to the real world, localizing objects with tactile from the first touch.</p>
-              <p>This technology is used by <a href="https://www.magna.com/">Magna</a> and <a href="https://global.abb/group/">ABB</a>. Our tactile sensor is <a href="https://arxiv.org/abs/2103.12269" target="_blank">  Gelslim</a>. </p>
+              <!-- <p>Encoding inductive biases by optimizing unsupervised objectives at prediction time.</p> -->
             </td>
            </tr>
-           
-           <!-- <tr bgcolor="#ffffd0" onmouseout="B_stop()" onmouseover="B_start()"> -->
-           <tr onmouseout="B_stop()" onmouseover="B_start()">
-             <td style="padding:20px;width:25%;vertical-align:middle">
-               <div id='B_blurry' class='hidden'><img src="images/www/tactile_loc.webp"  width="160"></div>
-               <div id='B_sharp'>
-                 <a href="images/www/tactile_loc.webp"><img src="images/www/tactile_localization.png"  width="160"></a>
-               </div>
-               <script type="text/javascript">
-                 function B_start() {
-                   document.getElementById('B_blurry').style.display = 'inline';
-                   document.getElementById('B_sharp').style.display = 'none';
-                 }
 
-                 function B_stop() {
-                   document.getElementById('B_blurry').style.display = 'none';
-                   document.getElementById('B_sharp').style.display = 'inline';
-                 }
-                 B_stop()
-               </script>
-             </td>
-             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/pdf/1904.10944.pdf" target="_blank">
-                <papertitle> Tactile Mapping and Localization from High-Resolution Tactile Imprints </papertitle>
-              </a>
-              <br>
-              <strong>M. Bauza</strong>, O. Canal, A. Rodriguez
-              <br>
-              <em>ICRA</em>, 2019 
-              <br>
-              <a href="https://arxiv.org/pdf/1904.10944.pdf" target="_blank">PDF</a> /
-              <a href="https://youtu.be/uMkspjmDbqs" target="_blank">video</a> /
-              <!-- <a href="data/Anderson2016.bib" target="_blank">bibtex</a> / -->
-              <a href="https://mcube.mit.edu/research/tactile_localization.html" target="_blank"> website </a>
-              <p></p>
-              <p>Shape reconstruction and object localization using the vision-based tactile sensor GelSlim.</p>
-            </td>
-           </tr>
-           
+
            <tr onmouseout="C_stop()" onmouseover="C_start()">
              <td style="padding:20px;width:25%;vertical-align:middle">
                <div id='C_blurry' class='hidden'><img src="images/www/icra21.webp"  width="160"></div>
@@ -225,42 +188,47 @@
               <p>In real-time, we infer from planar pushes both the shape and pose of an object.</p>
             </td>
            </tr>
-           
-           <tr onmouseout="D_stop()" onmouseover="D_start()">
+           <tr bgcolor="#ffffd0" onmouseout="A_stop()" onmouseover="A_start()">
              <td style="padding:20px;width:25%;vertical-align:middle">
-               <div id='D_blurry' class='hidden'><img src="images/www/tailoring.png"  width="160"></div>
-               <div id='D_sharp'>
-                 <a href="images/www/tailoring.png"><img src="images/www/tailoring.png"  width="160"></a>
+               <div id='A_blurry' class='hidden'><img src="images/www/RSS20.webp"  width="160"></div>
+               <div id='A_sharp'>
+                 <a href="images/www/RSS20.webp"><img src="images/www/RSS20.png"  width="160"></a>
                </div>
                <script type="text/javascript">
-                 function D_start() {
-                   document.getElementById('D_blurry').style.display = 'inline';
-                   document.getElementById('D_sharp').style.display = 'none';
+                 function A_start() {
+                   document.getElementById('A_blurry').style.display = 'inline';
+                   document.getElementById('A_sharp').style.display = 'none';
                  }
 
-                 function D_stop() {
-                   document.getElementById('D_blurry').style.display = 'none';
-                   document.getElementById('D_sharp').style.display = 'inline';
+                 function A_stop() {
+                   document.getElementById('A_blurry').style.display = 'none';
+                   document.getElementById('A_sharp').style.display = 'inline';
                  }
-                 D_stop()
+                 A_stop()
                </script>
              </td>
+
+
              <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/pdf/2009.10623.pdf" target="_blank">
-                <papertitle> Tailoring: Encoding Inductive Biases by Optimizing Unsupervised Objectives at Prediction Time </papertitle>
+              <a href="https://arxiv.org/pdf/2012.05205.pdf" target="_blank" target="_blank">
+                <papertitle> Tactile Object Pose Estimation from the First Touch with Geometric Contact Rendering </papertitle>
               </a>
               <br>
-              F. Alet, K. Kawaguchi, <strong> M. Bauza</strong>, N. Kuru, T. Lozano-Perez, L. Kaelbling
+              <strong>M. Bauza</strong>, E. Valls, B. Lim, T. Sechopoulos
               <br>
-              <em>NeurIPS</em>, 2021 
+              <em>CORL</em>, 2020
               <br>
-              <a href="https://arxiv.org/pdf/2009.10623.pdf" target="_blank">PDF</a> 
-              <!-- <a href="data/Anderson2016.bib" target="_blank">bibtex</a> -->
+              <a href="https://arxiv.org/pdf/2012.05205.pdf" target="_blank">PDF</a> /
+              <a href="https://youtu.be/OF8HbbGHnsM" target="_blank">video</a> /
+              <!-- <a href="data/Anderson2016.bib" target="_blank">bibtex</a> / -->
+              <a href="https://mcube.mit.edu/research/tactile_loc_first_touch.html" target="_blank"> website </a>
               <p></p>
-              <!-- <p>Encoding inductive biases by optimizing unsupervised objectives at prediction time.</p> -->
+              <p>We learn in simulation how to accurate localize objects. Our solution transfers to the real world, localizing objects with tactile from the first touch.</p>
+              <p>This technology is used by <a href="https://www.magna.com/">Magna</a> and <a href="https://global.abb/group/">ABB</a>. Our tactile sensor is <a href="https://arxiv.org/abs/2103.12269" target="_blank">  Gelslim</a>. </p>
             </td>
            </tr>
-
+                  
+          
            <tr onmouseout="E_stop()" onmouseover="E_start()">
              <td style="padding:20px;width:25%;vertical-align:middle">
                <div id='E_blurry' class='hidden'><img src="images/www/icra20.webp"  width="160"></div>
@@ -294,6 +262,46 @@
               <!-- <a href="data/Anderson2016.bib" target="_blank">bibtex</a> -->
               <p></p>
               <!-- <p>Accurate vision-based manipulation through contact reasoning.</p> -->
+            </td>
+           </tr>
+
+
+           <!-- <tr bgcolor="#ffffd0" onmouseout="B_stop()" onmouseover="B_start()"> -->
+           <!--            <tr onmouseout="B_stop()" onmouseover="B_start()"> -->
+           <tr bgcolor="#ffffd0" onmouseout="B_stop()" onmouseover="B_start()">
+             <td style="padding:20px;width:25%;vertical-align:middle">
+               <div id='B_blurry' class='hidden'><img src="images/www/tactile_loc.webp"  width="160"></div>
+               <div id='B_sharp'>
+                 <a href="images/www/tactile_loc.webp"><img src="images/www/tactile_localization.png"  width="160"></a>
+               </div>
+               <script type="text/javascript">
+                 function B_start() {
+                   document.getElementById('B_blurry').style.display = 'inline';
+                   document.getElementById('B_sharp').style.display = 'none';
+                 }
+
+                 function B_stop() {
+                   document.getElementById('B_blurry').style.display = 'none';
+                   document.getElementById('B_sharp').style.display = 'inline';
+                 }
+                 B_stop()
+               </script>
+             </td>
+             <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/pdf/1904.10944.pdf" target="_blank">
+                <papertitle> Tactile Mapping and Localization from High-Resolution Tactile Imprints </papertitle>
+              </a>
+              <br>
+              <strong>M. Bauza</strong>, O. Canal, A. Rodriguez
+              <br>
+              <em>ICRA</em>, 2019 
+              <br>
+              <a href="https://arxiv.org/pdf/1904.10944.pdf" target="_blank">PDF</a> /
+              <a href="https://youtu.be/uMkspjmDbqs" target="_blank">video</a> /
+              <!-- <a href="data/Anderson2016.bib" target="_blank">bibtex</a> / -->
+              <a href="https://mcube.mit.edu/research/tactile_localization.html" target="_blank"> website </a>
+              <p></p>
+              <p>Shape reconstruction and object localization using the vision-based tactile sensor GelSlim.</p>
             </td>
            </tr>
            
