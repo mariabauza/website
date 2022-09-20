@@ -141,6 +141,118 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
            <heading> Publications </heading>
+           </tr>
+            <tr bgcolor="#ffffd0" onmouseout="Z_stop()" onmouseover="Z_start()">
+             <td style="padding:20px;width:25%;vertical-align:middle">
+               <div id='Z_blurry' class='hidden'><img src="images/www/simPLE.webp"  width="160"></div>
+               <div id='Z_sharp'>
+                 <a href="images/www/simPLE.webp"><img src="images/www/simPLE.png"  width="160"></a>
+               </div>
+               <script type="text/javascript">
+                 function Z_start() {
+                   document.getElementById('Z_blurry').style.display = 'inline';
+                   document.getElementById('Z_sharp').style.display = 'none';
+                 }
+
+                 function Z_stop() {
+                   document.getElementById('Z_blurry').style.display = 'none';
+                   document.getElementById('Z_sharp').style.display = 'inline';
+                 }
+                 Z_stop()
+               </script>
+             </td>
+
+
+             <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/pdf/2012.05205.pdf" target="_blank" target="_blank">
+                <papertitle> Towards precise generalization of robot skills: accurate pick-and-place of novel objects" </papertitle>
+              </a>
+              <br>
+              <strong>M. Bauza</strong>, T. Bronars, Y. Hou, N. Chavan-Dafle, A. Rodriguez
+              <br>
+              <em>in progress </em>, 2022
+              <br>
+              <!-- <a href="https://arxiv.org/abs/2204.11701.pdf" target="_blank">PDF</a> / -->
+              <!--<a href="https://youtu.be/OF8HbbGHnsM" target="_blank">video</a> / -->
+              <!-- <a href="data/Anderson2016.bib" target="_blank">bibtex</a> / -->
+              <!--<a href="https://mcube.mit.edu/research/tactile_loc_first_touch.html" target="_blank"> website </a>  -->
+              <p></p>
+              <p>We learn in simulation how to accurate pick-and-place objects with visuo-tactile perception. Our solution transfers to the real world and succefully handles diferent types of objects shapes without requiring prior experience.</p>
+            </td>
+           </tr>
+            <tr onmouseout="X_stop()" onmouseover="X_start()">
+             <td style="padding:20px;width:25%;vertical-align:middle">
+               <div id='X_blurry' class='hidden'><img src="images/www/fingerSLAM.png"  width="160"></div>
+               <div id='X_sharp'>
+                 <a href="images/www/fingerSLAM.png"><img src="images/www/fingerSLAM.png"  width="160"></a>
+               </div>
+               <script type="text/javascript">
+                 function X_start() {
+                   document.getElementById('X_blurry').style.display = 'inline';
+                   document.getElementById('X_sharp').style.display = 'none';
+                 }
+
+                 function X_stop() {
+                   document.getElementById('X_blurry').style.display = 'none';
+                   document.getElementById('X_sharp').style.display = 'inline';
+                 }
+                 X_stop()
+               </script>
+             </td>
+             <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/pdf/2009.10623.pdf" target="_blank">
+                <papertitle> FingerSLAM: Closed-loop Unknown Object Localization and Reconstruction from Visuo-tactile Feedback </papertitle>
+              </a>
+              <br>
+              J. Zhao, <strong> M. Bauza</strong>, E. Adelson
+              <br>
+              <em>under review</em>, 2022 
+              <br>
+              <!--<a href="https://arxiv.org/pdf/2009.10623.pdf" target="_blank">PDF</a> -->
+              <!-- <a href="data/Anderson2016.bib" target="_blank">bibtex</a> -->
+              <p></p>
+              <p> We address the problem of using visuo-tactile feedback for 6-DoF localization and 3D reconstruction of unknown in-hand objects.</p>
+            </td>
+           </tr>
+            <tr bgcolor="#ffffd0" onmouseout="Y_stop()" onmouseover="Y_start()">
+             <td style="padding:20px;width:25%;vertical-align:middle">
+               <div id='Y_blurry' class='hidden'><img src="images/www/tac2pos.png"  width="160"></div>
+               <div id='Y_sharp'>
+                 <a href="images/www/tac2pos.png"><img src="images/www/tac2pos.png"  width="160"></a>
+               </div>
+               <script type="text/javascript">
+                 function Y_start() {
+                   document.getElementById('Y_blurry').style.display = 'inline';
+                   document.getElementById('Y_sharp').style.display = 'none';
+                 }
+
+                 function Y_stop() {
+                   document.getElementById('Y_blurry').style.display = 'none';
+                   document.getElementById('Y_sharp').style.display = 'inline';
+                 }
+                 Y_stop()
+               </script>
+             </td>
+
+
+             <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/pdf/2012.05205.pdf" target="_blank" target="_blank">
+                <papertitle> Tac2Pose: Tactile Object Pose Estimation from the First Touch" </papertitle>
+              </a>
+              <br>
+              <strong>M. Bauza</strong>, T. Bronars, A. Rodriguez
+              <br>
+              <em>under review</em>, 2022
+              <br>
+              <a href="https://arxiv.org/abs/2204.11701.pdf" target="_blank">PDF</a>
+              <!--<a href="https://youtu.be/OF8HbbGHnsM" target="_blank">video</a> / -->
+              <!-- <a href="data/Anderson2016.bib" target="_blank">bibtex</a> / -->
+              <!--<a href="https://mcube.mit.edu/research/tactile_loc_first_touch.html" target="_blank"> website </a>  -->
+              <p></p>
+              <p>We learn in simulation how to accurate localize objects with tactile. Our solution transfers to the real world, providing reliable pose distributions from the first touch.</p>
+              <p>Our technology is used by <a href="https://www.magna.com/">Magna</a> and <a href="https://global.abb/group/">ABB</a> and MERL. Our tactile sensor is <a href="https://arxiv.org/abs/2103.12269" target="_blank">  Gelslim</a>. </p>
+            </td>
+           </tr>
 
            <tr onmouseout="D_stop()" onmouseover="D_start()">
              <td style="padding:20px;width:25%;vertical-align:middle">
@@ -173,7 +285,7 @@
               <a href="https://arxiv.org/pdf/2009.10623.pdf" target="_blank">PDF</a> 
               <!-- <a href="data/Anderson2016.bib" target="_blank">bibtex</a> -->
               <p></p>
-              <!-- <p>Encoding inductive biases by optimizing unsupervised objectives at prediction time.</p> -->
+              <p>Encoding inductive biases by optimizing unsupervised objectives at prediction time.</p>
             </td>
            </tr>
 
@@ -250,8 +362,6 @@
               <!-- <a href="data/Anderson2016.bib" target="_blank">bibtex</a> / -->
               <a href="https://mcube.mit.edu/research/tactile_loc_first_touch.html" target="_blank"> website </a>
               <p></p>
-              <p>We learn in simulation how to accurate localize objects. Our solution transfers to the real world, localizing objects with tactile from the first touch.</p>
-              <p>This technology is used by <a href="https://www.magna.com/">Magna</a> and <a href="https://global.abb/group/">ABB</a>. Our tactile sensor is <a href="https://arxiv.org/abs/2103.12269" target="_blank">  Gelslim</a>. </p>
             </td>
            </tr>
                   
@@ -436,7 +546,7 @@
               <!-- <a href="data/Anderson2016.bib" target="_blank">bibtex</a> / -->
               <a href="https://github.com/FerranAlet/graph_element_networks" target="_blank"> website </a>
               <p></p>
-              <!-- <p>Adaptive, structured computation and memory.</p> -->
+              <p>Adaptive, structured computation and memory.</p>
             </td>
            </tr>
            <tr onmouseout="H2_stop()" onmouseover="H2_start()">
