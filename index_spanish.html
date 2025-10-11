@@ -73,10 +73,23 @@
             <td style="padding-left:20px;padding-right:20px;width:100%;vertical-align:middle">
             <!-- <td style="padding:2.5%;width:40%;max-width:40%"> -->
               
-            <figure>
-                <img  src="images/www/demo_5obj.webp"  width="600" class="center">
-                <figcaption>El robot es capaz de recoger y colocar con precisión objetos con los que nunca antes había interactuado.</figcaption>
-            </figure>
+       <figure>
+          <!-- Create a flex container to hold the images -->
+          <div style="display: flex; justify-content: center; align-items: flex-start; gap: 15px;">
+              
+             <!-- First Image -->
+             <img src="images/www/exostart-earbuds.gif" height="300">
+              
+             <!-- Second Image -->
+             <img src="images/www/demo_5obj.webp" height="300">
+              
+         </div>
+          <figcaption style="text-align: left;">
+            ExoStart: RL para controlar manos robóticas.  
+            <span style="margin-left: 100px;"> Visión+tacto para la colocación precisa de objetos usando SimPLE.</span>
+          </figcaption>
+          <!-- <figcaption style="text-align: left> a) ExoStart: RL + sim2real for hand control.    <span style="margin-left: 50px;">    b) Precise pick-and-place of objects using SimPLE. </span></figcaption> -->
+        </figure>
 
             </td>
           </tr>
@@ -128,7 +141,188 @@
 </tr>
 
            <heading> Publicaciones </heading>
-            <tr bgcolor="#ffffd0" onmouseout="Z_stop()" onmouseover="Z_start()">
+
+
+<tr bgcolor="#ffffd0"  onmouseout="ExoStart_stop()" onmouseover="ExoStart_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div id='ExoStart_blurry' class='hidden'><img src="images/www/exostart.gif"  width="160"></div>
+              <div id='ExoStart_sharp'>
+                <a href="images/www/exostart.png"><img src="images/www/exostart.png"  width="160"></a>
+              </div>   
+              <script type="text/javascript">
+                function ExoStart_start() {
+                  document.getElementById('ExoStart_blurry').style.display = 'inline';
+                  document.getElementById('ExoStart_sharp').style.display = 'none';
+                }
+                
+                function ExoStart_stop() {
+                  document.getElementById('ExoStart_blurry').style.display = 'none';
+                  document.getElementById('ExoStart_sharp').style.display = 'inline';
+                }
+                ExoStart_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>ExoStart: Efficient learning for dexterous manipulation with sensorized exoskeleton demonstrations</papertitle>
+              <br>
+              Z. Si, J. Chen, E. Karagozler, A. Bronars, J. Hutchinson, T. Lampe, N. Gileadi, T. Howell, S. Saliceti, L. Barczyk, I. Correa, T. Erez, M. Shridhar, M. Martins, K. Bousmalis, N. Heess, F. Nori, <strong>M. Bauza</strong>
+              <br>
+              <em>enviado a ICRA 2026</em>
+              <br>
+              <a href="https://arxiv.org/pdf/2506.11775" target="_blank">PDF</a> /
+              <!-- <a href="" target="_blank">video</a> / -->
+              <!-- <a href="data/ExoStart.bib" target="_blank">bibtex</a> / -->
+              <a href="https://sites.google.com/view/exostart" target="_blank">sitio web</a>
+              <p></p>
+              <p>Presentamos ExoStart, un marco de aprendizaje general y escalable que aprovecha el poder de la destreza humana para el control de manos robóticas. En particular, obtenemos datos de alta calidad recopilando demostraciones directas utilizando un exoesqueleto de bajo coste.
+            </td>
+           </tr>
+
+
+<tr onmouseout="Gemini25_stop()" onmouseover="Gemini25_start()">
+             <td style="padding:20px;width:25%;vertical-align:middle">
+               <div id='Gemini25_blurry' class='hidden'><img src="images/www/gemini25.png"  width="160"></div>
+               <div id='Gemini25_sharp'>   
+                 <a href="images/www/gemini25.png"><img src="images/www/gemini25.png"  width="160"></a>
+               </div>
+               <script type="text/javascript">
+                 function Gemini25_start() {
+                   document.getElementById('Gemini25_blurry').style.display = 'inline';
+                   document.getElementById('Gemini25_sharp').style.display = 'none';
+                 }
+                 
+                 function Gemini25_stop() {
+                   document.getElementById('Gemini25_blurry').style.display = 'none';
+                   document.getElementById('Gemini25_sharp').style.display = 'inline';
+                 }
+                 Gemini25_stop()
+               </script>
+             </td>
+             <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>Gemini 2.5: Pushing the frontier with advanced reasoning, multimodality, long context, and next generation agentic capabilities</papertitle>
+              <br>
+              Gemini Team
+              <br>
+              <em>Informe Técnico</em>
+              <br>
+              <a href="https://arxiv.org/pdf/2507.06261" target="_blank">PDF</a> /
+              <!-- <a href="" target="_blank">video</a> / -->
+              <!-- <a href="data/Gemini25.bib" target="_blank">bibtex</a> / -->
+              <a href="https://blog.google/technology/google-deepmind/gemini-model-thinking-updates-march-2025/" target="_blank">sitio web</a>
+              <p></p>
+              <p>Gemini 2.5 Pro es el modelo de Google DeepMind más capaz hasta la fecha, alcanzando un rendimiento de vanguardia en benchmarks de codificación y razonamiento de frontera. Gemini 2.5 Pro es también un modelo pensante que sobresale en la comprensión multimodal y es capaz de procesar hasta 3 horas de video.
+            </td>
+           </tr>
+
+<tr onmouseout="GeminiRobotics_stop()" onmouseover="GeminiRobotics_start()">
+             <td style="padding:20px;width:25%;vertical-align:middle">
+               <div id='GeminiRobotics_blurry' class='hidden'><img src="images/www/geminirobotics.gif"  width="160"></div>
+               <div id='GeminiRobotics_sharp'>
+                 <a href="images/www/geminirobotics.png"><img src="images/www/geminirobotics.png"  width="160"></a>
+               </div>
+               <script type="text/javascript">
+                 function GeminiRobotics_start() {
+                   document.getElementById('GeminiRobotics_blurry').style.display = 'inline';
+                   document.getElementById('GeminiRobotics_sharp').style.display = 'none';
+                 }
+                  
+                 function GeminiRobotics_stop() {
+                   document.getElementById('GeminiRobotics_blurry').style.display = 'none';
+                   document.getElementById('GeminiRobotics_sharp').style.display = 'inline';
+                 }
+                 GeminiRobotics_stop()
+               </script>
+             </td>
+             <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>Gemini robotics: Bringing ai into the physical world</papertitle>
+              <br>
+              Gemini Robotics Team
+              <br>
+              <em>Informe Técnico</em>
+              <br>
+              <a href="https://arxiv.org/pdf/2503.20020" target="_blank">PDF</a> /
+              <!-- <a href="" target="_blank">video</a> / -->
+              <!-- <a href="data/GeminiRobotics.bib" target="_blank">bibtex</a> / -->
+              <a href="https://deepmind.google/discover/blog/gemini-robotics-brings-ai-into-the-physical-world/" target="_blank">sitio web</a>
+              <p></p>
+              <p> Gemini Robotics es un modelo generalista avanzado de Visión-Lenguaje-Acción (VLA) capaz de controlar robots directamente. Gemini Robotics ejecuta movimientos suaves y reactivos para abordar una amplia gama de complejas tareas, siguiendo instrucciones de vocabulario diverso y abierto.
+            </td>
+           </tr>
+
+
+<tr onmouseout="PolicyIdling_stop()" onmouseover="PolicyIdling_start()">
+             <td style="padding:20px;width:25%;vertical-align:middle">
+               <div id='PolicyIdling_blurry' class='hidden'><img src="images/www/policyidling.png"  width="160"></div>
+               <div id='PolicyIdling_sharp'>
+                 <a href="images/www/policyidling.png"><img src="images/www/policyidling.png"  width="160"></a>
+               </div>
+               <script type="text/javascript">
+                 function PolicyIdling_start() {
+                   document.getElementById('PolicyIdling_blurry').style.display = 'inline';
+                   document.getElementById('PolicyIdling_sharp').style.display = 'none';
+                 }
+               
+                 function PolicyIdling_stop() {
+                   document.getElementById('PolicyIdling_blurry').style.display = 'none';
+                   document.getElementById('PolicyIdling_sharp').style.display = 'inline';
+                 }
+                 PolicyIdling_stop()
+               </script>
+             </td>
+             <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>Exploiting Policy Idling for Dexterous Manipulation</papertitle>
+              <br>
+              A. Chen, P. Brakel, A. Bronars, A. Xie, S. Huang, O. Groth, <strong>M. Bauza</strong>, et al.
+              <br>
+              <em>IROS </em>, 2025
+              <br>
+              <a href="https://arxiv.org/pdf/2508.15669" target="_blank">PDF</a>
+              <!-- <a href="" target="_blank">video</a> / -->
+              <!-- <a href="data/PolicyIdling.bib" target="_blank">bibtex</a> / -->
+              <!-- <a href="" target="_blank">website</a> -->
+              <p></p>
+              <p>Investigamos cómo aprovechar la detectabilidad del comportamiento de inactividad para guiar la exploración y la mejora de la política. Nuestro enfoque, Perturbaciones Inducidas por Pausa (PIP), aplica perturbaciones en los estados de inactividad detectados, ayudando así a escapar del problema de inactivdad.
+            </td>
+           </tr>
+
+<tr bgcolor="#ffffd0" onmouseout="DemoStart_stop()" onmouseover="DemoStart_start()">
+             <td style="padding:20px;width:25%;vertical-align:middle">
+               <div id='DemoStart_blurry' class='hidden'><img src="images/www/demostart.gif"  width="160"></div>
+               <div id='DemoStart_sharp'>
+                 <a href="images/www/demostart.png"><img src="images/www/demostart.png"  width="160"></a>
+               </div>
+               <script type="text/javascript">
+                 function DemoStart_start() {
+                   document.getElementById('DemoStart_blurry').style.display = 'inline';
+                   document.getElementById('DemoStart_sharp').style.display = 'none';
+                 }   
+               
+                 function DemoStart_stop() {
+                   document.getElementById('DemoStart_blurry').style.display = 'none';
+                   document.getElementById('DemoStart_sharp').style.display = 'inline';
+                 }
+                 DemoStart_stop()
+               </script>
+             </td>
+             <td style="padding:20px;width:75%;vertical-align:middle">
+
+             <papertitle>DemoStart: Demonstration-led autocurriculum applied to sim-to-real with multi-fingered robots</papertitle>
+              <br>
+              <strong>M. Bauza</strong>, J. Chen, V. Dalibard, N. Gileadi, et al.
+              <br>
+              <em>ICRA 2025</em>
+              <br>
+              <a href="https://arxiv.org/pdf/2409.06613" target="_blank">PDF</a> /
+              <!-- <a href="" target="_blank">video</a> / -->
+              <!-- <a href="data/DemoStart.bib" target="_blank">bibtex</a> / -->
+              <a href="https://sites.google.com/view/demostart" target="_blank">sitio web</a>
+              <p></p>
+              <p>DemoStart es un método de aprendizaje por refuerzo con autocurrículo capaz de aprender comportamientos de manipulación complejos en un brazo equipado con una mano robótica de tres dedos, usando una recompensa dispersa y un puñado de demostraciones.</p>
+            </td> 
+           </tr>
+
+
+<tr bgcolor="#ffffd0" onmouseout="Z_stop()" onmouseover="Z_start()">
              <td style="padding:20px;width:25%;vertical-align:middle">
                <div id='Z_blurry' class='hidden'><img src="images/www/simPLE.webp"  width="160"></div>
                <div id='Z_sharp'>
@@ -139,7 +333,7 @@
                    document.getElementById('Z_blurry').style.display = 'inline';
                    document.getElementById('Z_sharp').style.display = 'none';
                  }
-
+                 
                  function Z_stop() {
                    document.getElementById('Z_blurry').style.display = 'none';
                    document.getElementById('Z_sharp').style.display = 'inline';
@@ -147,25 +341,97 @@
                  Z_stop()
                </script>
              </td>
-
-
+              
+              
              <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/pdf/2012.05205.pdf" target="_blank" target="_blank">
-                <papertitle> Towards precise generalization of robot skills: accurate pick-and-place of novel objects" </papertitle>
+              
+                <papertitle> simPLE: a visuotactile method learned in simulation to precisely pick, localize, regrasp, and place objects </papertitle>
               </a>
+              <br>   
+              <strong>M. Bauza</strong>, T. Bronars, Y. Hou, I. Taylor, N. Chavan-Dafle, A. Rodriguez
               <br>
-              <strong>M. Bauza</strong>, T. Bronars, Y. Hou, N. Chavan-Dafle, A. Rodriguez
+              <em>Science Robotics</em>, 2024
               <br>
-              <em>in progress </em>, 2022
-              <br>
-              <!-- <a href="https://arxiv.org/abs/2204.11701.pdf" target="_blank">PDF</a> / -->
+              <a href="https://arxiv.org/pdf/2307.13133" target="_blank">PDF</a> /
               <!--<a href="https://youtu.be/OF8HbbGHnsM" target="_blank">video</a> / -->
               <!-- <a href="data/Anderson2016.bib" target="_blank">bibtex</a> / -->
-              <!--<a href="https://mcube.mit.edu/research/tactile_loc_first_touch.html" target="_blank"> pagina web </a>  -->
+              <a href="https://mcube.mit.edu/research/simPLE.html" target="_blank">sitio web</a>
               <p></p>
-              <p>Aprendemos en simulación cómo recoger y colocar objetos con precisión usando vision y tacto. Nuestra solución transfiere al mundo real, manejando con éxito diferentes tipos de objetos sin necesidad de experiencia previa.</p>
+              <p>Aprendemos en simulación cómo recoger y colocar objetos con precisión mediante percepción visuotáctil. Nuestra solución se transfiere al mundo real y maneja con éxito diferentes tipos de formas de objetos sin requerir experiencia previa.</p>
             </td>
            </tr>
+
+<tr onmouseout="LMPC_stop()" onmouseover="LMPC_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div id='LMPC_blurry' class='hidden'><img src="images/www/lmpc.gif"  width="160"></div>
+              <div id='LMPC_sharp'> 
+                <a href="images/www/lmpc.png"><img src="images/www/lmpc.png"  width="160"></a>
+              </div>
+              <script type="text/javascript">
+                function LMPC_start() {
+                  document.getElementById('LMPC_blurry').style.display = 'inline';
+                  document.getElementById('LMPC_sharp').style.display = 'none';
+                }
+              
+                function LMPC_stop() {
+                  document.getElementById('LMPC_blurry').style.display = 'none';
+                  document.getElementById('LMPC_sharp').style.display = 'inline';
+                } 
+                LMPC_stop()
+              </script>
+            </td> 
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>Learning to learn faster from human feedback with language model predictive control</papertitle>
+              <br>
+              Jacky Liang, Fei Xia, Wenhao Yu, Andy Zeng, Montserrat Gonzalez Arenas, Maria Attarian, <strong>Maria Bauza</strong>, et al.
+              <br>
+              <em>RSS</em>, 2024
+              <br>   
+              <a href="https://arxiv.org/pdf/2402.11450" target="_blank">PDF</a> /
+              <!-- <a href="" target="_blank">video</a> / -->
+              <!-- <a href="data/LMPC.bib" target="_blank">bibtex</a> / -->
+              <a href="https://robot-teaching.github.io/" target="_blank">sitio web</a>
+              <p></p>
+              <p>Language Model Predictive Control (LMPC) es un marco que ajusta PaLM 2 para mejorar su capacidad de enseñanza en 78 tareas a través de 5 tipos de robots. LMPC acelera la adaptación rápida del robot mediante el aprendizaje en contexto.</p>
+            </td>
+           </tr>
+
+<tr onmouseout="RoboCat_stop()" onmouseover="RoboCat_start()">
+             <td style="padding:20px;width:25%;vertical-align:middle">
+               <div id='RoboCat_blurry' class='hidden'><img src="images/www/robocat.gif"  width="160"></div>
+               <div id='RoboCat_sharp'>
+                 <a href="images/www/robocat.png"><img src="images/www/robocat.png"  width="160"></a>
+               </div>
+               <script type="text/javascript">
+                 function RoboCat_start() {
+                   document.getElementById('RoboCat_blurry').style.display = 'inline';
+                   document.getElementById('RoboCat_sharp').style.display = 'none';
+                 }
+              
+                 function RoboCat_stop() {
+                   document.getElementById('RoboCat_blurry').style.display = 'none';
+                   document.getElementById('RoboCat_sharp').style.display = 'inline';
+                 }
+                 RoboCat_stop()
+               </script>
+             </td>
+             <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>RoboCat: A Self-Improving Foundation Agent for Robotic Manipulation</papertitle>
+              <br>
+              K. Bousmalis, G. Vezzani, D. Rao, C. Devin, A. Lee, <strong>M. Bauza</strong>, et al.
+              <br>
+              <em>TMLR</em>, 2023
+              <br>
+              <a href="https://arxiv.org/pdf/2306.11706" target="_blank">PDF</a> /
+              <!--<a href="https://youtu.be/OF8HbbGHnsM" target="_blank">video</a> / -->
+              <!-- <a href="data/Anderson2016.bib" target="_blank">bibtex</a> / -->
+              <a href="https://deepmind.google/discover/blog/robocat-a-self-improving-robotic-agent/" target="_blank">sitio web</a>
+              <p></p>
+              <p>Presentamos RoboCat, un agente de IA para robótica que se automejora, aprende a realizar una variedad de tareas en diferentes brazos y luego genera nuevos datos de entrenamiento para mejorar su técnica.</p>
+               
+            </td>
+           </tr>
+
             <tr onmouseout="X_stop()" onmouseover="X_start()">
              <td style="padding:20px;width:25%;vertical-align:middle">
                <div id='X_blurry' class='hidden'><img src="images/www/fingerSLAM.webp"  width="160"></div>
@@ -233,7 +499,7 @@
               <a href="https://arxiv.org/abs/2204.11701.pdf" target="_blank">PDF</a>
               <!--<a href="https://youtu.be/OF8HbbGHnsM" target="_blank">video</a> / -->
               <!-- <a href="data/Anderson2016.bib" target="_blank">bibtex</a> / -->
-              <!--<a href="https://mcube.mit.edu/research/tactile_loc_first_touch.html" target="_blank"> pagina web </a>  -->
+              <!--<a href="https://mcube.mit.edu/research/tactile_loc_first_touch.html" target="_blank"> sitio web </a>  -->
               <p></p>
               <p>Aprendemos en simulación cómo localizar objetos con precisión con el tacto. Nuestra solución transfiere al mundo real, brindando distribuciones de posición y orientación fiables desde el primer contacto.</p>
               <p>Nuestra tecnologia se usa en <a href="https://www.magna.com/">Magna</a>, <a href="https://global.abb/group/">ABB</a> y MERL. Nuestro sensor tactil es <a href="https://arxiv.org/abs/2103.12269" target="_blank">  Gelslim</a>. </p>
@@ -308,7 +574,7 @@
               <a href="https://youtu.be/77VnwArHOhk" target="_blank">video</a> /
               <a href="https://github.com/suddhu/gpis-touch-public">codigo</a> /
               <!-- <a href="data/Anderson2016.bib" target="_blank">bibtex</a> / -->
-              <a href="http://www.cs.cmu.edu/~sudhars1/tactile-slam/" target="_blank"> pagina web </a>
+              <a href="http://www.cs.cmu.edu/~sudhars1/tactile-slam/" target="_blank"> sitio web </a>
               <p></p>
               <p>En tiempo real, inferimos de los empujes planos tanto la forma como la pose de un objeto.</p>
             </td>
@@ -346,7 +612,7 @@
               <a href="https://arxiv.org/pdf/2012.05205.pdf" target="_blank">PDF</a> /
               <a href="https://youtu.be/OF8HbbGHnsM" target="_blank">video</a> /
               <!-- <a href="data/Anderson2016.bib" target="_blank">bibtex</a> / -->
-              <a href="https://mcube.mit.edu/research/tactile_loc_first_touch.html" target="_blank"> pagina web </a>
+              <a href="https://mcube.mit.edu/research/tactile_loc_first_touch.html" target="_blank"> sitio web </a>
               <p></p>
             </td>
            </tr>
@@ -422,7 +688,7 @@
               <a href="https://arxiv.org/pdf/1904.10944.pdf" target="_blank">PDF</a> /
               <a href="https://youtu.be/uMkspjmDbqs" target="_blank">video</a> /
               <!-- <a href="data/Anderson2016.bib" target="_blank">bibtex</a> / -->
-              <a href="https://mcube.mit.edu/research/tactile_localization.html" target="_blank"> pagina web </a>
+              <a href="https://mcube.mit.edu/research/tactile_localization.html" target="_blank"> sitio web </a>
               <p></p>
               <p>Reconstrucción de la forma y localización de objetos utilizando el sensor táctil basado en visión GelSlim.</p>
             </td>
@@ -459,7 +725,7 @@
               <a href="https://arxiv.org/pdf/1911.05071.pdf" target="_blank">PDF</a> /
               <a href="https://github.com/yenchenlin/evf-public">codigo</a> /
               <!-- <a href="data/Anderson2016.bib" target="_blank">bibtex</a> / -->
-              <a href="https://yenchenlin.me/evf/" target="_blank"> pagina web </a>
+              <a href="https://yenchenlin.me/evf/" target="_blank"> sitio web </a>
               <p></p>
               <p>Aprender a codificar nuevos objetos para generar predicciones de video físicamente plausibles.</p>
             </td>
@@ -530,7 +796,7 @@
               <a href="https://arxiv.org/pdf/1904.09019.pdf" target="_blank">PDF</a> /
               <a href="https://youtu.be/wp9CjkOQm48" target="_blank">video</a> /
               <!-- <a href="data/Anderson2016.bib" target="_blank">bibtex</a> / -->
-              <a href="https://github.com/FerranAlet/graph_element_networks" target="_blank"> pagina web </a>
+              <a href="https://github.com/FerranAlet/graph_element_networks" target="_blank"> sitio web </a>
               <p></p>
               <p>Aprendemos a mapear de funciones a funciones mediante la combinación de redes neuronales en grafos y un mecanismo de atención.</p>
             </td>
@@ -565,7 +831,7 @@
               <br>
               <a href="https://arxiv.org/pdf/1910.00618.pdf" target="_blank">PDF</a> /
               <!-- <a href="data/Anderson2016.bib" target="_blank">bibtex</a> / -->
-              <a href="http://mit.edu/mcube/omnipush-dataset/" target="_blank"> pagina web </a>
+              <a href="http://mit.edu/mcube/omnipush-dataset/" target="_blank"> sitio web </a>
               <p></p>
               <p>Presentamos un gran conjunto de datos de alta calidad sobre empujes plano que incluye video RGB-D y una amplia variabilidad de objetos.</p>
               
@@ -637,7 +903,7 @@
               <br>
               <a href="https://arxiv.org/pdf/1904.06580.pdf" target="_blank">PDF</a> /
               <!-- <a href="data/Anderson2016.bib" target="_blank">bibtex</a> / -->
-              <a href="http://sain.csail.mit.edu/" target="_blank"> pagina web </a>
+              <a href="http://sain.csail.mit.edu/" target="_blank"> sitio web </a>
               <p></p>
               <p>Proponemos un modelo dinámico híbrido, redes de interacción aumentadas por simulador, que combina un simulador de física con una red neuronal basada en objetos.</p>
               
@@ -673,7 +939,7 @@
               <br>
               <a href="https://arxiv.org/pdf/1808.03246.pdf" target="_blank">PDF</a> /
               <!-- <a href="data/Anderson2016.bib" target="_blank">bibtex</a> / -->
-              <a href="http://physplus.csail.mit.edu/" target="_blank"> pagina web </a>
+              <a href="http://physplus.csail.mit.edu/" target="_blank"> sitio web </a>
               <p></p>
               <p>Aumentamos un simulador analítico de cuerpo rígido con una red neuronal que aprende a modelar la incertidumbre como residuos. Premio al mejor artículo sobre robótica cognitiva en IROS 2018.</p>
               
@@ -710,7 +976,7 @@
               <a href="https://vision.princeton.edu/projects/2017/arc/paper.pdf" target="_blank">PDF</a> /
               <a href="https://www.youtube.com/watch?v=6fG7zwGfIkI" target="_blank">video</a> /
               <!-- <a href="data/Anderson2016.bib" target="_blank">bibtex</a> / -->
-              <a href="https://arc2017.mit.edu/" target="_blank"> pagina web </a>
+              <a href="https://arc2017.mit.edu/" target="_blank"> sitio web </a>
               <p></p>
               <p>Con el equipo de MIT-Princeton desarrollamos un sistema robótico robusto para reponer objetos.</p>
               
@@ -817,7 +1083,7 @@
               <a href="https://arxiv.org/pdf/1604.04038.pdf" target="_blank">PDF</a> /
               <a href="https://www.youtube.com/watch?v=tuXCHFnc7DY" target="_blank">video</a> /
               <!-- <a href="data/Anderson2016.bib" target="_blank">bibtex</a> / -->
-              <a href="http://mcube.mit.edu/push-dataset/index.html" target="_blank"> pagina web </a>
+              <a href="http://mcube.mit.edu/push-dataset/index.html" target="_blank"> sitio web </a>
               <p></p>
               <p> Más de un millón de datos recopilados en experimentos de empuje reales.</p>
               
@@ -910,7 +1176,7 @@
             <td style="padding:0px">
               <br>
               <p style="text-align:right;font-size:small;">
-              Gracias por compartir <a href="https://jonbarron.info/"  target="_blank"> este diseño de pagina web</a>.
+              Gracias por compartir <a href="https://jonbarron.info/"  target="_blank"> este diseño de sitio web</a>.
               </p>
             </td>
           </tr>

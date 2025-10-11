@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -71,9 +72,9 @@
                 to make robots more accurate, reactive, and dexterous. -->
               </p>
               <p align="justify">
-              <strong>  Final PhD work: precise pick-and-placing of objects without prior experience! </strong> Why is this important? Currently, industry can't solve
+              <!-- <strong>  Final PhD work: precise pick-and-placing of objects without prior experience! </strong> Why is this important? Currently, industry can't solve
               this problem for a large variety of objects. Our system can, enabling robotics solutions in a wide variety of applications where flexibility is key.
-              </p>
+              </p> --> 
             </td>
           </tr>
         </tbody></table>
@@ -82,10 +83,28 @@
             <td style="padding-left:20px;padding-right:20px;width:100%;vertical-align:middle">
             <!-- <td style="padding:2.5%;width:40%;max-width:40%"> -->
               
-            <figure>
+            <!-- <figure>
                 <img  src="images/www/demo_5obj.webp"  width="600" class="center">
                 <figcaption>The robot is capable to precisely pick-and-place objects that it had never interacted with before.</figcaption>
-            </figure>
+            </figure> -->
+
+       <figure>
+          <!-- Create a flex container to hold the images -->
+          <div style="display: flex; justify-content: center; align-items: flex-start; gap: 15px;">
+        
+             <!-- First Image -->
+             <img src="images/www/exostart-earbuds.gif" height="300">
+        
+             <!-- Second Image -->
+             <img src="images/www/demo_5obj.webp" height="300">
+
+         </div>
+          <figcaption style="text-align: left;">
+            ExoStart: RL + sim2real transfer for hand control.  
+            <span style="margin-left: 140px;"> Precise pick-and-place of objects using SimPLE.</span>
+          </figcaption>
+          <!-- <figcaption style="text-align: left> a) ExoStart: RL + sim2real for hand control.    <span style="margin-left: 50px;">    b) Precise pick-and-place of objects using SimPLE. </span></figcaption> -->
+        </figure>
 
             </td>
           </tr>
@@ -136,6 +155,184 @@
 
            <heading> Publications </heading>
            </tr>
+
+
+
+           <tr bgcolor="#ffffd0"  onmouseout="ExoStart_stop()" onmouseover="ExoStart_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div id='ExoStart_blurry' class='hidden'><img src="images/www/exostart.gif"  width="160"></div>
+              <div id='ExoStart_sharp'>
+                <a href="images/www/exostart.png"><img src="images/www/exostart.png"  width="160"></a>
+              </div>
+              <script type="text/javascript">
+                function ExoStart_start() {
+                  document.getElementById('ExoStart_blurry').style.display = 'inline';
+                  document.getElementById('ExoStart_sharp').style.display = 'none';
+                }
+
+                function ExoStart_stop() {
+                  document.getElementById('ExoStart_blurry').style.display = 'none';
+                  document.getElementById('ExoStart_sharp').style.display = 'inline';
+                }
+                ExoStart_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>ExoStart: Efficient learning for dexterous manipulation with sensorized exoskeleton demonstrations</papertitle>
+              <br>
+              Z. Si, J. Chen, E. Karagozler, A. Bronars, J. Hutchinson, T. Lampe, N. Gileadi, T. Howell, S. Saliceti, L. Barczyk, I. Correa, T. Erez, M. Shridhar, M. Martins, K. Bousmalis, N. Heess, F. Nori, <strong>M. Bauza</strong>
+              <br>
+              <em>submitted to ICRA 2026</em>
+              <br>
+              <a href="https://arxiv.org/pdf/2506.11775" target="_blank">PDF</a> /
+              <!-- <a href="" target="_blank">video</a> / -->
+              <!-- <a href="data/ExoStart.bib" target="_blank">bibtex</a> / -->
+              <a href="https://sites.google.com/view/exostart" target="_blank">website</a>
+              <p></p>
+              <p> We present ExoStart, a general and scalable learning framework that leverages the power of human dexterity for robotic hand control. In particular, we obtain high-quality data by collecting direct demonstrations using an low-cost exoeskeleton, capturing the rich behaviors that humans naturally can demonstrate. </p>
+            </td>
+           </tr>
+            <tr onmouseout="Gemini25_stop()" onmouseover="Gemini25_start()">
+             <td style="padding:20px;width:25%;vertical-align:middle">
+               <div id='Gemini25_blurry' class='hidden'><img src="images/www/gemini25.png"  width="160"></div>
+               <div id='Gemini25_sharp'>
+                 <a href="images/www/gemini25.png"><img src="images/www/gemini25.png"  width="160"></a>
+               </div>
+               <script type="text/javascript">
+                 function Gemini25_start() {
+                   document.getElementById('Gemini25_blurry').style.display = 'inline';
+                   document.getElementById('Gemini25_sharp').style.display = 'none';
+                 }
+
+                 function Gemini25_stop() {
+                   document.getElementById('Gemini25_blurry').style.display = 'none';
+                   document.getElementById('Gemini25_sharp').style.display = 'inline';
+                 }
+                 Gemini25_stop()
+               </script>
+             </td>
+             <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>Gemini 2.5: Pushing the frontier with advanced reasoning, multimodality, long context, and next generation agentic capabilities</papertitle>
+              <br>
+              Gemini Team
+              <br>
+              <em>Technical Report</em>
+              <br>
+              <a href="https://arxiv.org/pdf/2507.06261" target="_blank">PDF</a> /
+              <!-- <a href="" target="_blank">video</a> / -->
+              <!-- <a href="data/Gemini25.bib" target="_blank">bibtex</a> / -->
+              <a href="https://blog.google/technology/google-deepmind/gemini-model-thinking-updates-march-2025/" target="_blank">website</a>
+              <p></p>
+              <p> Gemini 2.5 Pro is Google DeepMind's most capable model yet, achieving SoTA performance on frontier coding and reasoning benchmarks. Gemini 2.5 Pro is also a thinking model that excels at multimodal understanding and it is now able to process up to 3 hours of video content. </p>
+            </td>
+           </tr>
+            <tr onmouseout="GeminiRobotics_stop()" onmouseover="GeminiRobotics_start()">
+             <td style="padding:20px;width:25%;vertical-align:middle">
+               <div id='GeminiRobotics_blurry' class='hidden'><img src="images/www/geminirobotics.gif"  width="160"></div>
+               <div id='GeminiRobotics_sharp'>
+                 <a href="images/www/geminirobotics.png"><img src="images/www/geminirobotics.png"  width="160"></a>
+               </div>
+               <script type="text/javascript">
+                 function GeminiRobotics_start() {
+                   document.getElementById('GeminiRobotics_blurry').style.display = 'inline';
+                   document.getElementById('GeminiRobotics_sharp').style.display = 'none';
+                 }
+
+                 function GeminiRobotics_stop() {
+                   document.getElementById('GeminiRobotics_blurry').style.display = 'none';
+                   document.getElementById('GeminiRobotics_sharp').style.display = 'inline';
+                 }
+                 GeminiRobotics_stop()
+               </script>
+             </td>
+             <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>Gemini robotics: Bringing ai into the physical world</papertitle>
+              <br>
+              Gemini Robotics Team
+              <br>
+              <em>Technical Report</em>
+              <br>
+              <a href="https://arxiv.org/pdf/2503.20020" target="_blank">PDF</a> /
+              <!-- <a href="" target="_blank">video</a> / -->
+              <!-- <a href="data/GeminiRobotics.bib" target="_blank">bibtex</a> / -->
+              <a href="https://deepmind.google/discover/blog/gemini-robotics-brings-ai-into-the-physical-world/" target="_blank">website</a>
+              <p></p>
+              <p> Gemini Robotics is an advanced Vision-Language-Action (VLA) generalist model capable of directly controlling robots. Gemini Robotics executes smooth and reactive movements to tackle a wide range of complex manipulation tasks, handling unseen environments as well as following diverse, open vocabulary instructions. </p>
+            </td>
+           </tr>
+            <tr onmouseout="PolicyIdling_stop()" onmouseover="PolicyIdling_start()">
+             <td style="padding:20px;width:25%;vertical-align:middle">
+               <div id='PolicyIdling_blurry' class='hidden'><img src="images/www/policyidling.png"  width="160"></div>
+               <div id='PolicyIdling_sharp'>
+                 <a href="images/www/policyidling.png"><img src="images/www/policyidling.png"  width="160"></a>
+               </div>
+               <script type="text/javascript">
+                 function PolicyIdling_start() {
+                   document.getElementById('PolicyIdling_blurry').style.display = 'inline';
+                   document.getElementById('PolicyIdling_sharp').style.display = 'none';
+                 }
+
+                 function PolicyIdling_stop() {
+                   document.getElementById('PolicyIdling_blurry').style.display = 'none';
+                   document.getElementById('PolicyIdling_sharp').style.display = 'inline';
+                 }
+                 PolicyIdling_stop()
+               </script>
+             </td>
+             <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>Exploiting Policy Idling for Dexterous Manipulation</papertitle>
+              <br>
+              A. Chen, P. Brakel, A. Bronars, A. Xie, S. Huang, O. Groth, <strong>M. Bauza</strong>, et al.
+              <br>
+              <em>IROS </em>, 2025
+              <br>
+              <a href="https://arxiv.org/pdf/2508.15669" target="_blank">PDF</a>
+              <!-- <a href="" target="_blank">video</a> / -->
+              <!-- <a href="data/PolicyIdling.bib" target="_blank">bibtex</a> / -->
+              <!-- <a href="" target="_blank">website</a> -->
+              <p></p>
+              <p> We investigate how to leverage the detectability of idling behavior to inform exploration and policy improvement. Our approach, Pause-Induced Perturbations (PIP), applies perturbations at detected idling states, thus helping it to escape problematic basins of attraction.</p>
+            </td>
+           </tr>
+
+
+
+
+            <tr bgcolor="#ffffd0" onmouseout="DemoStart_stop()" onmouseover="DemoStart_start()">
+             <td style="padding:20px;width:25%;vertical-align:middle">
+               <div id='DemoStart_blurry' class='hidden'><img src="images/www/demostart.gif"  width="160"></div>
+               <div id='DemoStart_sharp'>
+                 <a href="images/www/demostart.png"><img src="images/www/demostart.png"  width="160"></a>
+               </div>
+               <script type="text/javascript">
+                 function DemoStart_start() {
+                   document.getElementById('DemoStart_blurry').style.display = 'inline';
+                   document.getElementById('DemoStart_sharp').style.display = 'none';
+                 }
+
+                 function DemoStart_stop() {
+                   document.getElementById('DemoStart_blurry').style.display = 'none';
+                   document.getElementById('DemoStart_sharp').style.display = 'inline';
+                 }
+                 DemoStart_stop()
+               </script>
+             </td>
+             <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>DemoStart: Demonstration-led autocurriculum applied to sim-to-real with multi-fingered robots</papertitle>
+              <br>
+              <strong>M. Bauza</strong>, J. Chen, V. Dalibard, N. Gileadi, et al.
+              <br>
+              <em>ICRA 2025</em>
+              <br>
+              <a href="https://arxiv.org/pdf/2409.06613" target="_blank">PDF</a> /
+              <!-- <a href="" target="_blank">video</a> / -->
+              <!-- <a href="data/DemoStart.bib" target="_blank">bibtex</a> / -->
+              <a href="https://sites.google.com/view/demostart" target="_blank">website</a>
+              <p></p>
+              <p> DemoStart is an auto-curriculum reinforcement learning method capable of learning complex manipulation behaviors on an arm equipped with a three-fingered robotic hand, from only a sparse reward and a handful of demonstrations in simulation.</p>
+            </td>
+           </tr>
+
             <tr bgcolor="#ffffd0" onmouseout="Z_stop()" onmouseover="Z_start()">
              <td style="padding:20px;width:25%;vertical-align:middle">
                <div id='Z_blurry' class='hidden'><img src="images/www/simPLE.webp"  width="160"></div>
@@ -159,21 +356,95 @@
 
              <td style="padding:20px;width:75%;vertical-align:middle">
               
-                <papertitle> Towards precise generalization of robot skills: accurate pick-and-place of novel objects" </papertitle>
+                <papertitle> simPLE: a visuotactile method learned in simulation to precisely pick, localize, regrasp, and place objects </papertitle>
               </a>
               <br>
-              <strong>M. Bauza</strong>, T. Bronars, Y. Hou, N. Chavan-Dafle, A. Rodriguez
+              <strong>M. Bauza</strong>, T. Bronars, Y. Hou, I. Taylor, N. Chavan-Dafle, A. Rodriguez
               <br>
-              <em>in progress </em>, 2022
+              <em> Science Robotics </em>, 2024
               <br>
-              <!-- <a href="https://arxiv.org/abs/2204.11701.pdf" target="_blank">PDF</a> / -->
+              <a href="https://arxiv.org/pdf/2307.13133" target="_blank">PDF</a> /
               <!--<a href="https://youtu.be/OF8HbbGHnsM" target="_blank">video</a> / -->
               <!-- <a href="data/Anderson2016.bib" target="_blank">bibtex</a> / -->
-              <!--<a href="https://mcube.mit.edu/research/tactile_loc_first_touch.html" target="_blank"> website </a>  -->
+              <a href="https://mcube.mit.edu/research/simPLE.html" target="_blank"> website </a>
               <p></p>
               <p>We learn in simulation how to accurate pick-and-place objects with visuo-tactile perception. Our solution transfers to the real world and succefully handles diferent types of objects shapes without requiring prior experience.</p>
             </td>
            </tr>
+
+           <tr onmouseout="LMPC_stop()" onmouseover="LMPC_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div id='LMPC_blurry' class='hidden'><img src="images/www/lmpc.gif"  width="160"></div>
+              <div id='LMPC_sharp'>
+                <a href="images/www/lmpc.png"><img src="images/www/lmpc.png"  width="160"></a>
+              </div>
+              <script type="text/javascript">
+                function LMPC_start() {
+                  document.getElementById('LMPC_blurry').style.display = 'inline';
+                  document.getElementById('LMPC_sharp').style.display = 'none';
+                }
+
+                function LMPC_stop() {
+                  document.getElementById('LMPC_blurry').style.display = 'none';
+                  document.getElementById('LMPC_sharp').style.display = 'inline';
+                }
+                LMPC_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>Learning to learn faster from human feedback with language model predictive control</papertitle>
+              <br>
+              Jacky Liang, Fei Xia, Wenhao Yu, Andy Zeng, Montserrat Gonzalez Arenas, Maria Attarian, <strong>Maria Bauza</strong>, et al.
+              <br>
+              <em>RSS</em>, 2024
+              <br>
+              <a href="https://arxiv.org/pdf/2402.11450" target="_blank">PDF</a> /
+              <!-- <a href="" target="_blank">video</a> / -->
+              <!-- <a href="data/LMPC.bib" target="_blank">bibtex</a> / -->
+              <a href="https://robot-teaching.github.io/" target="_blank">website</a>
+              <p></p>
+              <p> Language Model Predictive Control (LMPC) is a framework that fine-tunes PaLM 2 to improve its teachability on 78 tasks across 5 robot embodiments. LMPC accelerates fast robot adaptation via in-context learning. </p> 
+            </td>
+           </tr>
+
+
+           <tr onmouseout="RoboCat_stop()" onmouseover="RoboCat_start()">
+             <td style="padding:20px;width:25%;vertical-align:middle">
+               <div id='RoboCat_blurry' class='hidden'><img src="images/www/robocat.gif"  width="160"></div>
+               <div id='RoboCat_sharp'>
+                 <a hrewef="images/www/robocat.png"><img src="images/www/robocat.png"  width="160"></a>
+               </div>
+               <script type="text/javascript">
+                 function RoboCat_start() {
+                   document.getElementById('RoboCat_blurry').style.display = 'inline';
+                   document.getElementById('RoboCat_sharp').style.display = 'none';
+                 }
+
+                 function RoboCat_stop() {
+                   document.getElementById('RoboCat_blurry').style.display = 'none';
+                   document.getElementById('RoboCat_sharp').style.display = 'inline';
+                 }
+                 RoboCat_stop()
+               </script>
+             </td>
+             <td style="padding:20px;width:75%;vertical-align:middle">
+                <papertitle>RoboCat: A Self-Improving Foundation Agent for Robotic Manipulation</papertitle>
+              <br>
+              K. Bousmalis, G. Vezzani, D. Rao, C. Devin, A. Lee, <strong>M. Bauza</strong>, et al.
+              <br>
+              <em>TMLR</em>, 2023
+              <br>
+              <a href="https://arxiv.org/pdf/2306.11706" target="_blank">PDF</a> /
+              <!--<a href="https://youtu.be/OF8HbbGHnsM" target="_blank">video</a> / -->
+              <!-- <a href="data/Anderson2016.bib" target="_blank">bibtex</a> / -->
+              <a href="https://deepmind.google/discover/blog/robocat-a-self-improving-robotic-agent/" target="_blank"> website </a>
+              <p></p>
+              <p>We introduce a self-improving AI agent for robotics, RoboCat, that learns to perform a variety of tasks across different arms, and then self-generates new training data to improve its technique.</p>
+
+            </td>
+           </tr>
+
+
             <tr onmouseout="X_stop()" onmouseover="X_start()">
              <td style="padding:20px;width:25%;vertical-align:middle">
                <div id='X_blurry' class='hidden'><img src="images/www/fingerSLAM.webp"  width="160"></div>
@@ -929,3 +1200,4 @@
 </body>
 
 </html>
+
